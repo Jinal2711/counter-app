@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from "react";
+import React, { useState } from "react";
 
 const Counter = () => {
   const [counter, setCounter] = useState(1);
@@ -21,7 +21,7 @@ const Counter = () => {
     <div className="counter">
       <button
         className={`btn ${decrementFlag ? "subActive" : "subtract"} ${
-          counter == 1 ? "disabled" : "subtract"
+          counter === 1 ? "disabled" : "subtract"
         }`}
         onClick={handleDecrement}
       >
@@ -35,7 +35,7 @@ const Counter = () => {
       />
       <button
         className={`btn ${incrementFlag ? "addActive" : "add"} ${
-          counter == 1000 ? "disabled" : "add"
+          counter === 1000 ? "disabled" : "add"
         }`}
         onClick={handleIncrement}
       >
