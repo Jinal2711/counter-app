@@ -17,6 +17,15 @@ const Counter = () => {
     setCounter((prev) => prev - 1);
   };
 
+  const handleChange = (e) => {
+    let texboxValue = parseInt(e.target.value);
+    if (texboxValue <= 1000) {
+      setCounter(texboxValue);
+    } else {
+      alert("You can only enter value till 1000");
+    }
+  };
+
   return (
     <div className="counter">
       <button
@@ -31,7 +40,7 @@ const Counter = () => {
         type="text"
         value={counter || 1}
         className="inputNumber"
-        onChange={(e) => setCounter(parseInt(e.target.value))}
+        onChange={handleChange}
       />
       <button
         className={`btn ${incrementFlag ? "addActive" : "add"} ${
