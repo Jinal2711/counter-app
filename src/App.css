@@ -1,0 +1,71 @@
+.App {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 50px;
+}
+.counter {
+  display: flex;
+  justify-content: center;
+  border: none;
+  opacity: 0.9;
+}
+.btn {
+  background-color: rgb(255 255 255);
+  color: #9e3e33;
+  border: 2px solid #9e3e33;
+  padding: 10px 20px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 24px;
+  font-weight: bold;
+  cursor: pointer;
+  margin: 0;
+}
+
+.subtract {
+  border-bottom-left-radius: 8px;
+  border-top-left-radius: 8px;
+}
+.add {
+  border-bottom-right-radius: 8px;
+  border-top-right-radius: 8px;
+}
+
+.addActive {
+  background: rgb(158, 62, 51) !important;
+  color: rgb(247, 247, 247) !important;
+  border-bottom-right-radius: 8px;
+  border-top-right-radius: 8px;
+}
+.subActive {
+    background: rgb(158, 62, 51) !important;
+    color: rgb(247, 247, 247) !important;
+  border-bottom-left-radius: 8px;
+  border-top-left-radius: 8px;
+}
+
+.disabled{
+    cursor: not-allowed;
+    pointer-events:none;
+    opacity: 0.7;
+}
+
+.inputNumber {
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 22px;
+  font-weight: bold;
+  background-color: rgb(165 42 42 / 17%);
+  border-top: 2px solid rgb(165 42 42);
+  border-bottom: 2px solid rgb(165 42 42);
+  border-left: none;
+  border-right: none;
+  color: rgb(165 42 42);
+  width: 60px;
+}
+*:focus {
+  outline: none;
+}
